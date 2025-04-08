@@ -1,8 +1,8 @@
-@font-face { font-family: Bodoni; src: url('Fonts/BodoniFLF-Roman.ttf'); } 
-@font-face { font-family: Bodoni-Bold; src: url('Fonts/BodoniFLF-Bold.ttf'); }
-@font-face { font-family: Bodoni-Italic; src: url('Fonts/BodoniFLF-Italic.ttf'); } 
-@font-face { font-family: Bodoni-BoldItalic; src: url('Fonts/BodoniFLF-BoldItalic.ttf'); } 
-@font-face { font-family: GreatVibes; src: url('Fonts/GreatVibes-Regular.ttf');  }
+@font-face { font-family: Bodoni; src: url('../Fonts/BodoniFLF-Roman.ttf'); } 
+@font-face { font-family: Bodoni-Bold; src: url('../Fonts/BodoniFLF-Bold.ttf'); }
+@font-face { font-family: Bodoni-Italic; src: url('../Fonts/BodoniFLF-Italic.ttf'); } 
+@font-face { font-family: Bodoni-BoldItalic; src: url('../Fonts/BodoniFLF-BoldItalic.ttf'); } 
+@font-face { font-family: GreatVibes; src: url('../Fonts/GreatVibes-Regular.ttf');  }
 
 
 * {
@@ -18,12 +18,9 @@
 
 
 body {
-  background: url('Background Images/top-view-leather-texture-background.jpg') fixed ;
-  /* background-image: url('Background Images/black-fine-leather-textured-background.jpg');
-  background-image: url('Background Images/white-fine-leather-textured-background.jpg'); */
+  background: url('../Background Images/top-view-leather-texture-background.jpg') fixed ;
   background-size: cover; 
   text-align: center;
-  /* padding: 20px; */
   font-family: 'GreatVibes', 'Century Gothic', 'Georgia', serif;
 }
 
