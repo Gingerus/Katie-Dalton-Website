@@ -1,0 +1,171 @@
+@font-face { font-family: Bodoni; src: url('Fonts/BodoniFLF-Roman.ttf'); } 
+@font-face { font-family: Bodoni-Bold; src: url('Fonts/BodoniFLF-Bold.ttf'); }
+@font-face { font-family: Bodoni-Italic; src: url('Fonts/BodoniFLF-Italic.ttf'); } 
+@font-face { font-family: Bodoni-BoldItalic; src: url('Fonts/BodoniFLF-BoldItalic.ttf'); } 
+@font-face { font-family: GreatVibes; src: url('Fonts/GreatVibes-Regular.ttf');  }
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*
+      Century Gothic
+      Lucida Handwriting
+      Bodoni
+  */
+}
+
+
+body {
+  background: url('Background Images/top-view-leather-texture-background.jpg') fixed ;
+  /* background-image: url('Background Images/black-fine-leather-textured-background.jpg');
+  background-image: url('Background Images/white-fine-leather-textured-background.jpg'); */
+  background-size: cover; 
+  text-align: center;
+  /* padding: 20px; */
+  font-family: 'GreatVibes', 'Century Gothic', 'Georgia', serif;
+}
+
+header 
+{
+  background-color: rgba(240,235,210, 0.9);
+}
+
+main {
+  max-width: 800px;  /* Restrict content width */
+  margin: 0 auto;    /* Center content horizontally */
+  background-color: rgba(240,235,210, 0.9);  /* White background with slight transparency */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);  /* Optional shadow for depth */
+}
+
+/* section {
+  max-width: 800px;
+  margin-bottom: 40px;
+} */
+
+section img {
+  width: auto;
+  justify-content: center;
+}
+
+nav.horizontal ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(107, 50, 12);
+  height: 40px;
+}
+  
+nav.horizontal ul li {
+  flex: 1 1 0px;   
+  margin: 10px;
+  list-style-type: none;
+}
+
+nav.horizontal ul li a {
+  color: rgb(228, 230, 221);
+  display: block;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 0% 0%;
+  text-decoration: none;
+}
+
+nav.horizontal ul li a:hover, nav.horizontal ul li a:active { 
+  color: rgb(0, 0, 0);
+  /*color: rgb(255, 211, 211); */
+  text-shadow: 0px 0px 2px white, 0px 0px 8px white;
+}
+
+h1 
+{
+  font-size: 7rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 2rem;
+  margin: 10px 0 20px;
+  line-height: 1.6;
+}
+.btn {
+  display: inline-block;
+  background-color: #CDAA7D; 
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  margin: 10px;
+}
+
+
+@media (max-width: 768px) {
+  h1, h2 {
+      font-size: 2rem;
+  }
+  p {
+      font-size: 1rem;
+  }
+}
+
+
+.landing-timer-section {
+  display:block;
+  height: auto;
+  /* position: relative;
+  text-align: center;
+  color: white; */
+}
+
+.timer-image {
+  width:fit-content;
+}
+
+
+.testCentered {
+  position: relative;
+  transform: translate(0%, -300%);
+  font-size: 10px;
+}
+
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10px;
+}
+
+
+/* Timer Code */
+#countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Bodoni', 'Century Gothic', 'Georgia', serif; 
+  font-size: 2em;
+  color: #ffffff;
+  text-shadow: 0px 0px 2px rgb(0, 0, 0), 0px 0px 8px rgb(0, 0, 0);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.time-block {
+  text-align: center;
+  padding: 0px 10px 0px 10px;    /*  For divs around the individual numbers + text */
+}
+
+.time-block span {
+  display: block;
+  font-size: 4em;
+  font-weight: bold;
+}
