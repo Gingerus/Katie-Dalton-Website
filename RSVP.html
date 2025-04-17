@@ -6,22 +6,13 @@
     <!--<link href="reset.css" rel="stylesheet"> -->
     <link href="CSS/styles.css"; rel="stylesheet">
     <title>Katie & Dalton's Wedding RSVP</title>
-
 </head>
-<body>
-    <header>
-        <h1>Katie & Dalton</h1>
-        <p>September 6th, 2025</p>
 
-        <nav class="horizontal">
-            <ul>
-                <li><a href="index.html"> Home </a></li>
-                <li><a href="RSVP.html"> RSVP </a></li>
-                <li><a href="Registry.html"> Registry </a></li>
-                <li><a href="Hotels.html"> Hotels </a></li>
-            </ul>
-        </nav>
-    </header>
+
+
+            <!-- SEND RESPIONSES TO DALTONKATIE@GMAIL.COM -->
+<body>
+    <script src="JS/header.js"></script>
 
     <main>
         <div class="container">
@@ -31,6 +22,25 @@
                 <a href="#" class="btn">RSVP Now</a>
             </section>
         </div>
+
+        <form action="/action_page.php">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+
+            <label> are you coming? </label>
+            <input type="checkbox" id="Going" name="Going">
+            
+            <br><br>
+            
+
+
+            <input type="submit" value="Submit">
+            </br>
+            
+
+          </form> 
     </main>
 
 </body>
