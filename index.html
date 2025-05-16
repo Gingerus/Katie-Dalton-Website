@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--<link href="reset.css" rel="stylesheet"> -->
     <link href="CSS/styles.css"; rel="stylesheet">
-    <script src="JS/slideshow.js"></script>
+    <script src="JS/slideshow.js" async></script>
     <title>Katie & Dalton's Wedding</title>
 
 </head>
@@ -54,7 +54,32 @@
 
             <section id="our-story">
                 <h2>Our Story</h2>
-                <p> Need a Nice story or introductions,  maybe just a little blurb and then mention the pictures after it</p>
+                <p>Dalton and I first crossed paths in high school. Although it would be romantic to claim love at first sight, the truth is neither of us
+                    even remember our first meeting—one day, Dalton was simply there. Over the next few months, we got to know each other, and      
+                    soon after, we began dating.
+
+                    <br><br>
+                    
+                    Fast forward three years filled with adventures and semi-blissful dating (lol), we, with the support of our families, built our home
+                    on the farm. A year later, around Christmas, an unforgettable moment unfolded. I was driving home from my work Christmas
+                    party when Dalton texted, asking me to pick him up at the barn. Knowing me well, he anticipated I might forget, so he parked his
+                    work truck across our driveway, ensuring I’d stop.
+                    
+                    <br><br>
+
+                    When I arrived, he came out of the barn and motioned for me to sit in the passenger seat. To my surprise, he blindfolded me with
+                    our dog&#39;s nutcracker hankerchief. Despite having hoped for this moment for months, I remained unsuspecting. Dalton had
+                    apparently planned the entire proposal two months earlier in a different way but had to leave for work in Florida—typical Dalton:  
+                    always working!
+
+                    <br><br>
+                    
+                    Blindfolded, we drove a short distance to our house. Dalton gently guided me out of the truck, turned me around, and asked me to
+                    remove the blindfold. By then, I had a hunch about what was happening. Before me, strung across hay bales out back, were white
+                    Christmas lights held with blue tuck tape from our house build, spelling out, “Will you marry me?” There he was, on one knee,
+                    holding the ring.
+                    
+                    Of course, I said yes! And here we are now, preparing to tie the knot nine months later.</p>
             </section>
 
 
@@ -64,7 +89,7 @@
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
             <div class="numbertext">1 / 3</div>
-            <img src="Images\Horizontal\IMG_6168.JPG" style="width:100%">
+            <img id="FirstImage" src="Images\Horizontal\IMG_6168.JPG" style="width:100%">
             </div>
         
             <div class="mySlides fade">
@@ -91,6 +116,10 @@
             </div>
         </div>
     </main>
+
+    <script>
+        showSlides(slideIndex);
+    </script>
 
 </body>
 </html>

@@ -16,6 +16,9 @@
   */
 }
 
+/* #FirstImage {
+  display:block;
+} */
 
 body {
   /* background: url('../Images/Vertical/IMG_6640.JPG'); */
@@ -64,7 +67,7 @@ nav.horizontal ul {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  background-color: rgb(107, 50, 12);
+  background-color: rgb(250, 201, 168);
   height: 40px;
 }
   
@@ -185,9 +188,9 @@ section img {
 }
 
 /* Hide the images by default */
-.mySlides {
-  display: none;
-}
+.mySlides { display: none; }
+.mySlides:first-child { display: block; }
+
 
 /* Next & previous buttons */
 .prev, .next {
@@ -208,6 +211,12 @@ section img {
 /* Position the "next button" to the right */
 .next {
   right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Position the "next button" to the right */
+.prev {
+  left: 0;
   border-radius: 3px 0 0 3px;
 }
 
