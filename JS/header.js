@@ -9,6 +9,7 @@ template.innerHTML =  `<header>
     <ul>
         <li><a href="index.html"> Home </a></li>
         <li><a href="wedding_details.html"> Wedding Details </a></li>
+        <li><a href="Registry.html"> Registry </a></li>
         <li><a href="RSVP.html"> RSVP </a></li>
         <li><a href="Hotels.html"> Hotels </a></li>
     </ul>
