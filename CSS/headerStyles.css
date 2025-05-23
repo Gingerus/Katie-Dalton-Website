@@ -1,13 +1,26 @@
+@font-face { font-family: SilverFake; src: url('../Fonts/silverfake.otf');  }
+
+@font-face { font-family: JimmyScript; src: url('../Fonts/JimmyScript-Rg.otf');  }
+
+@font-face { font-family: PlayfairDisplay; src: url('../Fonts/PlayfairDisplay-Regular.ttf');  }
+
 header 
 {
+  padding-top: 20px;
   background-color: rgba(240,235,210, 0.9);
-  font-family: Garamond, serif;
+  font-family: SilverFake, Garamond, serif;
 }
 
-header > h1
-{
+header > h1 { 
   font-family: 'GreatVibes', 'Century Gothic', 'Georgia', serif;
+  font-size: 6rem;
+  margin-bottom: 20px;
+  /* font-family: JimmyScript; */
 }
+
+header > p { font-family: PlayfairDisplay, 'Garamond', 'serif'}
+
+header > nav { font-family: SilverFake, 'GreatVibes', 'Century Gothic', 'Georgia', serif; }
 
 
 /* Navigation Bar Elements */
