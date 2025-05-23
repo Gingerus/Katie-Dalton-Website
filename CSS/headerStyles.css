@@ -1,0 +1,42 @@
+header 
+{
+  background-color: rgba(240,235,210, 0.9);
+  font-family: Garamond, serif;
+}
+
+header > h1
+{
+  font-family: 'GreatVibes', 'Century Gothic', 'Georgia', serif;
+}
+
+
+/* Navigation Bar Elements */
+nav.horizontal ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(107, 50, 12);
+  height: 40px;
+}
+  
+nav.horizontal ul li {
+  flex: 1 1 0px;   
+  margin: 10px;
+  list-style-type: none;
+}
+
+nav.horizontal ul li a {
+  color: rgb(228, 230, 221);
+  display: block;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 0% 0%;
+  text-decoration: none;
+}
+
+nav.horizontal ul li a:hover, nav.horizontal ul li a:active { 
+  color: rgb(0, 0, 0);
+  /*color: rgb(255, 211, 211); */
+  text-shadow: 0px 0px 2px white, 0px 0px 8px white;
+}
