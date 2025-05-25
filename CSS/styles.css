@@ -25,14 +25,12 @@
 
 body {
   background: url('../Images/Horizontal/IMG_6640.JPG');
-  
   /* background: url('../Images/Vertical/IMG_6171.JPG'); */
   /* background: url('../Images/Vertical/Vertical-Backdrop-Katie-Dalton.jpg'); */
   
   background-size: cover;
   background-attachment: fixed;
   text-align: center;
-  /* font-family: 'GreatVibes', 'Century Gothic', 'Georgia', serif; */
   --focal-point-x: 50%;
   --focal-point-y: 50%;
   background-position: var(--focal-point-x) var(--focal-point-y);
@@ -40,11 +38,11 @@ body {
 
 
 main {
-  max-width: 670px;  /* Restrict content width */
+  max-width: 768px;  /* Restrict content width */
   margin: 0 auto;    /* Center content horizontally */
   background-color: rgba(240,235,210, 0.9);  /* White background with slight transparency */
   padding: 30px;
-  border-radius: 10px;
+  border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);  /* Optional shadow for depth */
 }
 
@@ -52,16 +50,23 @@ section {
   padding-bottom:40px;
 }
 
-
 h2 {
   font-size: 5rem;
   margin-bottom: 20px;
+  font-family: 'GreatVibes', 'Century Gothic', 'Georgia', serif; 
 }
 
-p {
-  font-size: 1.5rem;
+h3 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-family: 'GreatVibes', 'Century Gothic', 'Georgia', serif; 
+}
+
+#our-story p {
+  font-size: 2rem;
   margin: 10px 0 20px;
   line-height: 1.6;
+  font-family: 'GreatVibes', 'Century Gothic', 'Georgia', serif; 
 }
 
 .btn {
@@ -76,62 +81,34 @@ p {
 
 
 #our-story {
-  max-width: 100vw;
-  font-family: 'GreatVibes', 'Century Gothic', 'Georgia', serif;
+  max-width: 80vw;
+  font-family: 'GreatVibes', 'Century Gothic', 'Georgia', serif; 
 }
 
+.container {font-family: PlayfairDisplay, 'Garamond', 'serif'; }
 
-#wedding-detail > h2 , #wedding-detail > h3  { font-family: 'GreatVibes', 'Century Gothic', 'Georgia', serif; }
+#wedding-detail , #registry , #hotels {font-family: PlayfairDisplay, 'Garamond', 'serif'; }
 
-
-#wedding-detail > p {
+p {
   font-family: PlayfairDisplay, 'Garamond', 'serif';
   font-size: 1.4rem;
   margin: 10px 0 20px;
   line-height: 1.5;
 }
 
-#Registry {font-family: PlayfairDisplay, 'Garamond', 'serif';  font-size: 10px;}
+#registry > p { font-size: 1.4rem;}
 
-#Registry > h2 { font-family: 'GreatVibes', 'Century Gothic', 'Georgia', serif;  }
-
-#Registry > p { font-size: 1.4rem;}
-
-
-
-
-
-#wedding-detail > a {
-  font-family: PlayFairDisplay, 'Garamond', 'serif';
-}
-
-#wedding-detail > p {
-  font-family:  PlayFairDisplay, Garamond, serif;
-}
 
 
 @media (max-width: 768px) {
-  h1 {font-size: 4rem;  }
-  h2 {font-size: 3.5rem;}
-  h3 {font-size: 3rem; }
-  p {
-      font-size: 2rem;
-  }
-  nav {
-      font-size: 80%;
-  }
   main { max-width: 80vw;  /* Restrict content width */ }
 
+  body {
+    background-image: url('../Images/Vertical/Vertical-Backdrop-Katie-Dalton.jpg');
+  }
   #our-story {
     width: 70vw;
   }
-}
-
-@media (min-width: 769px) {
-  h1 {font-size: 4rem;  }
-  h2 {font-size: 3.5rem;}
-  h3 {font-size: 3rem; }
-  p {font-size: 2rem;}
 }
 
 

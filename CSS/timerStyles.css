@@ -1,69 +1,70 @@
-/* Timer Code */
+#landing-timer-section {
+  position: relative;
+  display: inline-block; /* shrinkwrap to image size */
+  max-width: 90vw;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: visible; /* ensure timer can overflow if needed */
+}
 
-  #countdown {
+#timer-image {
+  padding-top: 10px;
+  min-width: 80vw;
+  max-width: 90vw;
+  height: auto;
+  border-radius: inherit;
+  display: block;
+  object-fit: cover;
+  max-height: 90vh; /* Prevents super tall image */
+}
+
+.centered {
+  position: absolute;
+  top: 1.3em;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: clamp(8px, 2.0vw, 24px); /* Responsive text size */
+  max-width: 95vw;
+  padding: 0 1em;
+}
+
+#countdown {
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: 'Bodoni', 'Century Gothic', 'Georgia', serif; 
   color: #ffffff;
   text-shadow: 0px 0px 2px rgb(0, 0, 0), 0px 0px 2px rgb(0, 0, 0);
-  }
+  gap: 0.3em;
+}
+
+/* Add styling for the colons (:) */
+#countdown p {
+  font-size: clamp(1.5rem, 6vw, 3rem);
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
 .time-block {
   text-align: center;
+  .time-block { padding: 0px 5px 0px 10px;    /*  For divs around the individual numbers + text */ }
 }
 
 .time-block span {
   display: block;
   font-weight: bold;
+  font-size: clamp(1.2rem, 6vw, 3rem);
+  font-size: 4em;
 }
 
 #days {
-  padding-right: 20px;
+  padding-right: 40px;
 }
 
-
-/* .centered {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -350%);
-  font-size: 10px;
-  z-index: 2;
-  } */
-
-  .centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 3wv;
-  z-index: 2;
-  }
-
-/* PHONE */
-section img {
-  width: auto;
-  justify-content: center;
-}
-
-
-@media (max-width: 768px) {
-  #countdown { font-size: 3vw; padding: 5px; }
-  .time-block { padding: 0px 10px 0px 10px;    /*  For divs around the individual numbers + text */ }
-  .time-block span { font-size: 3em;}
- 
-  .centered { font-size: 10px;}
-  #timer-image {width: 90vw; border-radius:50px; }
+.days-text {
+  padding-right: 40px;
 }
 
 /* DESKTOP */
-@media (min-width: 769px) {
-  #countdown { font-size: 2em; padding: 5px; }
-
-  .time-block { padding: 0px 10px 0px 10px; }
-  .time-block span { font-size: 4em;}
-  
-  .centered { font-size: 10px; }
-    
-  #timer-image {width: 90vw; border-radius:50px; }
-}
+@media (min-width: 769px) { #timer-image {min-width: 769px;} }
