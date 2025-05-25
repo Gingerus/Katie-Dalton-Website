@@ -1,11 +1,3 @@
-document.getElementById('rsvp-form').addEventListener('submit', function(event) {
-  event.preventDefault(); // stop default submit
-
-  if (validateForm()) {
-    this.submit();  // submit if validation passes
-  }
-});
-
 
 // Shows a “max 10 guests” error
 function displayGuestLimitError() {
@@ -117,7 +109,7 @@ function renumberGuestFields() {
 
 
 // Validates that no guest fields are empty before submission
-function validateForm() {
+function validateAndSubmit() {
     const form = document.getElementById('rsvp-form');
     const guestInputs = form.querySelectorAll('input[name^="guest_name_"]');
     const attendingSelects = form.querySelectorAll('select[name^="attending_"]');
