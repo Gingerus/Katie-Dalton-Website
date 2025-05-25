@@ -105,19 +105,32 @@ p {
   border-radius: 8px;          /* rounded corners */
   padding: 15px 20px;          /* some spacing inside */
   box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* subtle shadow */
-  width: 50%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 15px;         /* space between cards */
 }
 
+.guest-names > label, .guest-entry > input {
+  width: 100%;
+}
+
+
+
+
 
 
 @media (max-width: 768px) {
   main { max-width: 80vw;  /* Restrict content width */ }
+  .guest-entry { max-width: 80vw; }
 
   body {
     background-image: url('../Images/Vertical/Vertical-Backdrop-Katie-Dalton.jpg');
+    text-align: center;
+     background-size: none;
+    background-repeat: repeat;
+    --focal-point-x: -70%;
+    --focal-point-y: 50%;
+    background-position: var(--focal-point-x) var(--focal-point-y);
   }
   #our-story {
     width: 70vw;

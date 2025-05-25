@@ -59,16 +59,27 @@ nav.horizontal ul li a:hover, nav.horizontal ul li a:active {
   text-shadow: 0 0 2px white, 0 0 8px white;
 }
 
+/* MOBILE WITH NAV */
+@media screen and (max-width: 768px) {
+  nav.horizontal ul li {
+  margin: 0 5px;
+}
+  nav.horizontal ul li a { 
+    font-size: 1em;
+    font-family:  PlayfairDisplay, 'Garamond', 'serif';
+  }
 
+}
 /* MOBILE */
+/*
 @media screen and (max-width: 768px) {
   header {position:static;}
   header > h1 {font-size: 4rem;}
 
 
     .header-wrapper {
-    position: static; /* <- let it scroll with page */
-    height: auto;     /* no need to cover full viewport */
+    position: static;
+    height: auto; 
     display: block;
     background-color: rgba(240,235,210, 0.95);
     padding: 0px;
@@ -117,4 +128,4 @@ nav.horizontal ul li a:hover, nav.horizontal ul li a:active {
     font-size: 1.5rem;
     color: #6B320C;
   }
-}
+} */
