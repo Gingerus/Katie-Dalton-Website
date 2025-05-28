@@ -10,7 +10,6 @@
 @font-face { font-family: PlayfairDisplay; src: url('../Fonts/PlayfairDisplay-Regular.ttf');  }
 
 
-
 * {
   margin: 0;
   padding: 0;
@@ -124,11 +123,12 @@ p {
   .guest-entry { max-width: 80vw; }
 
   body {
-    background-image: url('../Images/Vertical/Vertical-Backdrop-Katie-Dalton.jpg');
+    background-image: url('../Images/Horizontal/IMG_6640.JPG');
+    /* background-image: url('../Images/Vertical/Vertical-Backdrop-Katie-Dalton.jpg'); */
     text-align: center;
      background-size: none;
     background-repeat: repeat;
-    --focal-point-x: -70%;
+    --focal-point-x: 50%;
     --focal-point-y: 50%;
     background-position: var(--focal-point-x) var(--focal-point-y);
   }
@@ -136,5 +136,4 @@ p {
     width: 70vw;
   }
 }
-
 
